@@ -1,12 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RomanNumbersCalculator.Models
 {
-    internal class RomanNumber: IComparable, ICloneable
+    internal class RomanNumber
     {
         private ushort number = 1;
 
@@ -18,7 +15,7 @@ namespace RomanNumbersCalculator.Models
             this.number = number;
 
             romanNumber = "";
-            
+
             string[] ones = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
             string[] tens = { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
             string[] hundreds = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
